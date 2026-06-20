@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="images/launchmind_thumbnail_1781979452839.png" alt="LaunchMind Logo" width="300" />
   <br />
   <h1>🚀 LaunchMind</h1>
   <p>
