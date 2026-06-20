@@ -414,10 +414,7 @@ function Navbar({ onHome, onDemo, onHowItWorks, onAbout, onLaunch }: { onHome?: 
           boxShadow: "0 0 40px rgba(255,45,120,0.06), 0 8px 32px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.03)",
         }}>
         <button onClick={onHome} className="flex items-center gap-2 hover:opacity-80 transition-opacity outline-none">
-          <div className="w-7 h-7 rounded-lg flex items-center justify-center"
-            style={{ background: `${V}25`, border: `1px solid ${V}50` }}>
-            <Zap size={13} color={V} strokeWidth={2.5} />
-          </div>
+          <img src="/favicon.png" alt="LaunchMind Logo" className="w-7 h-7 rounded-lg object-cover" />
           <span className="font-bold" style={{ color: TP, letterSpacing: "-0.02em" }}>LaunchMind</span>
         </button>
         <div className="hidden md:flex items-center gap-2">
@@ -944,10 +941,7 @@ function ResultsDashboard({ idea, analysis, plan, isPlanning, onAdjust, onRestar
           style={{ width: 280, background: SURF, borderColor: "rgba(255,45,120,0.1)" }}>
           <div className="p-5 flex-1 flex flex-col gap-4">
             <div className="flex items-center gap-2 pb-4 border-b" style={{ borderColor: BD }}>
-              <div className="w-7 h-7 rounded-lg flex items-center justify-center"
-                style={{ background: `${V}20`, border: `1px solid ${V}40` }}>
-                <Zap size={13} color={V} strokeWidth={2.5} />
-              </div>
+              <img src="/favicon.png" alt="LaunchMind Logo" className="w-7 h-7 rounded-lg object-cover" />
               <span className="font-bold text-sm" style={{ color: TP, letterSpacing: "-0.02em" }}>LaunchMind</span>
             </div>
 
