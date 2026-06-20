@@ -1,0 +1,42 @@
+# ── Dependencies ──
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# ── Environment / Secrets ──
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ── Build output ──
+dist/
+build/
+*.egg-info/
+
+# ── IDE / Editor ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── OS files ──
+desktop.ini
+ehthumbs.db
+
+# ── Logs ──
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Misc ──
+.agents/
+.gemini/
