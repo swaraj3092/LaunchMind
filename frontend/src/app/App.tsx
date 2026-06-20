@@ -1421,6 +1421,8 @@ function AboutScreen({ onHome, onLaunch, onDemo, onHowItWorks }: { onHome: () =>
 
 // ── App ───────────────────────────────────────────────────────────────────────
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
 export default function App() {
   const [screen, setScreen] = useState<Screen>("landing");
   const [idea, setIdea] = useState("");
@@ -1440,7 +1442,7 @@ export default function App() {
     setIsAnalyzing(true);
     setAnalysis(null);
     try {
-      const res = await fetch("http://localhost:8000/api/analyze", {
+      const res = await fetch(`${API_BASE_URL}/api/analyze`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ idea, role, timeline, team_size: team, is_roast_mode: isRoastMode })
@@ -1467,7 +1469,7 @@ export default function App() {
         answer: answers[i]
       }));
 
-      const res = await fetch("http://localhost:8000/api/plan", {
+      const res = await fetch(`${API_BASE_URL}/api/plan`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ idea, role, timeline, team_size: team, answers: answersPayload })
