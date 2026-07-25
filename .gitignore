@@ -1,0 +1,38 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_reach/
+
+# Build outputs
+dist/
+tmp/
+out/
+build/
+.next/
+
+# Python caching & environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDEs & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+.eslintcache
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
