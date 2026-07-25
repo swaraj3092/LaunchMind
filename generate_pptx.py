@@ -35,9 +35,9 @@ def create_presentation():
             "tagline": "Curing the Builder's Blindspot. Validate before you build.",
             "bullets": [
                 "AI-Powered Startup Validation & Interactive VC Pitch Engine",
-                "Built by: Swaraj Kumar Behera & Prajakta Kuila (Team: Dynamic Duo)",
-                "For: InnovaHack Chapter 1 — Generative AI / Startup Innovation Track",
-                "Web App URL: http://localhost:5173 / GitHub: swaraj3092/LaunchMind"
+                "Presenter: Swaraj Kumar Behera & Prajakta Kuila (Team: Dynamic Duo)",
+                "Track: Generative AI & Startup Innovation Track",
+                "GitHub Repository: https://github.com/swaraj3092/LaunchMind"
             ],
             "note": "We are introducing LaunchMind, the AI co-founder that helps you validate ideas before writing code."
         },
@@ -46,31 +46,19 @@ def create_presentation():
             "title": "The Problem",
             "tagline": "The Startup Graveyard — Building blind.",
             "bullets": [
-                "Echo Chambers: Founders validate ideas with supportive friends instead of market realities.",
-                "Premature Optimization: Jumping straight into code before validating customer pain points.",
-                "Consultancy Barrier: Getting expert startup advice or VC feedback is expensive and out of reach.",
-                "Resource Loss: Billions of dollars and millions of hours of builder potential wasted annually."
+                "The Builder's Blindspot: spending 6 months coding before spending 6 minutes validating.",
+                "CB Insights: 'No Market Need' is the #1 cause of startup post-mortems (35%).",
+                "Founders rely on supportive friends instead of objective market feedback.",
+                "Expert startup advice and partner-level feedback is expensive and out of reach."
             ],
             "note": "Technical founders are biased toward action. They write code first and validate later, creating solutions for non-existent problems."
         },
         {
             "num": "03",
-            "title": "The Builder's Blindspot",
-            "tagline": "35% of startups fail because of 'No Market Need'.",
+            "title": "The Solution",
+            "tagline": "An always-on AI co-founder that stress-tests your idea.",
             "bullets": [
-                "Over 90% of tech startups fail within the first 3 years.",
-                "CB Insights flags 'No Market Need' as the #1 cause of startup post-mortems (35%).",
-                "Builders spend 6 months writing code before spending 6 minutes validating market realities.",
-                "LaunchMind exists to bridge the gap between initial ideation and actual market validation."
-            ],
-            "note": "Wasting 6 months building something nobody wants is the single biggest risk in startup creation. We solve this Day 1."
-        },
-        {
-            "num": "04",
-            "title": "Our Solution",
-            "tagline": "An always-on AI co-founder and Silicon Valley VC.",
-            "bullets": [
-                "Idea Interrogation: A personalized 5-question engine that grills the founder's assumptions.",
+                "Idea Interrogation: A personalized 5-question PM validation engine (Roast Mode 🔥).",
                 "Live Web Intel: Real-time search scraping to find active, live competitors.",
                 "Assumption Kill-Check: Surfaces the top 3 unvalidated risks that could kill the startup.",
                 "Action Roadmap: A structured 30/60/90-day plan with an actionable Day 1 checklist."
@@ -78,7 +66,7 @@ def create_presentation():
             "note": "LaunchMind extracts assumptions, runs live web comparisons, and hands you an actionable roadmap in minutes."
         },
         {
-            "num": "05",
+            "num": "04",
             "title": "How It Works",
             "tagline": "The 4-step validation funnel.",
             "bullets": [
@@ -90,98 +78,50 @@ def create_presentation():
             "note": "Our workflow guides the founder from raw ideation, to competitive defense, to a formatted execution plan."
         },
         {
-            "num": "06",
-            "title": "The VC Pitch Room",
+            "num": "05",
+            "title": "Key Differentiator: VC Pitch Room",
             "tagline": "Interactive VC pitch room with real-time score tracking.",
             "bullets": [
                 "3 AI Personas: Marcus Vance (Skeptic), Elena Rostova (Growth), Dr. Aris Thorne (Deep Tech).",
-                "Real-time Scoring: Real-time scoreboard updates (e.g. +10 Strong, -5 Red Flag) after each response.",
-                "AI-driven Due Diligence: 4 rounds of sharp, semantic follow-up questions tailored to your inputs.",
-                "Final Verdict: A blunt partner-level decision (Invest/Pass) with a complete feedback log."
+                "Real-time Scoring: Real-time scoreboard updates (+8 Strong, -4 Weak) based on user answers.",
+                "AI-driven Due Diligence: 4 rounds of sharp, semantic follow-up questions.",
+                "Partner Verdict: Full capital decision (Invest/Pass) with feedback logging."
             ],
             "note": "This is our key differentiator. Founders get grilled by simulated partners to test their market and tech defensibility."
         },
         {
-            "num": "07",
-            "title": "Competitive Advantage",
-            "tagline": "LaunchMind vs. Traditional Alternatives.",
+            "num": "06",
+            "title": "Market Size & Competition",
+            "tagline": "Validating the opportunity.",
             "bullets": [
-                "Real-Time Scraping: Unlike database tools, we run live search queries to catch active competitors.",
-                "Interactive VC: Moving past static plans to an active, conversational partner simulator.",
-                "Frictionless UX: Fast, glassmorphic React SPA designed for modern developers.",
-                "Action-Oriented: Every plan centers around a realistic, immediate Day 1 validation task."
+                "TAM/SAM/SOM Sizing: Interactive charts show Dollar Value market benchmarks.",
+                "Competitor Scraper: Real-time DuckDuckGo searches fetch competitor links & descriptions.",
+                "benchmarking: Visually benchmarks your idea scores against competitor metrics.",
+                "Differentiator Map: Pre-formats differentiators against Wave, FreshBooks, and Contra."
             ],
             "note": "LaunchMind is faster, live-connected, and conversational — moving past static templates to interactive validation."
         },
         {
-            "num": "08",
-            "title": "Technical Architecture",
+            "num": "07",
+            "title": "Tech Stack & Roadmap",
             "tagline": "Built for speed, safety, and scale.",
             "bullets": [
-                "Frontend: React SPA using Vite, TypeScript, TailwindCSS, and Framer Motion animations.",
+                "Frontend: React SPA using Vite, TypeScript, TailwindCSS, and Framer Motion.",
                 "Backend: FastAPI (Python) asynchronous REST API endpoints.",
-                "AI Pipeline: Google Gemini 2.5 Flash with structured JSON output templates.",
-                "Integrations: DuckDuckGo live search api wrapper for competitor mining."
+                "AI Pipeline: Google Gemini 2.5 Flash + DuckDuckGo live search api.",
+                "Traction: Deployed on Vercel. 30/60/90 roadmap targets user accounts and voice integration."
             ],
             "note": "Our stateless backend scales horizontally, using asynchronous parallel requests to Gemini and search to keep response times low."
         },
         {
-            "num": "09",
-            "title": "Traction & Roadmap",
-            "tagline": "Our execution plan.",
-            "bullets": [
-                "Phase 1 (Now): Core validation engine and VC Pitch Room MVP completed.",
-                "Phase 2 (Q3): User authentication, project dashboard persistence, and progress tracking.",
-                "Phase 3 (Q4): Voice-to-voice pitch capability and vector-based YC deck benchmark scanning.",
-                "Target: 10,000 active validations and partnerships with university hackathon organizers."
-            ],
-            "note": "We have the core MVP ready. Next, we persist user sessions, add voice capability, and integrate historical YC benchmarking."
-        },
-        {
-            "num": "10",
-            "title": "The Ask",
-            "tagline": "Partnering to scale startup validation.",
-            "bullets": [
-                "Stage: Working prototype deployed and open-source on GitHub.",
-                "Incubator Partnerships: License to university networks, venture studios, and incubators.",
-                "Hackathon Integrations: Position LaunchMind as the official pre-validation tool for hackathons.",
-                "Vision: To become the global standard for pre-seed project validation."
-            ],
-            "note": "We're looking to integrate with hackathons and incubators to help founders test assumptions before spending code resources."
-        },
-        {
-            "num": "11",
-            "title": "Business Model",
-            "tagline": "Scalable SaaS monetization strategy.",
-            "bullets": [
-                "Freemium Tier: 3 free startup idea validations per month for individual developers.",
-                "Pro Subscription ($19/mo): Unlimited idea tests, full VC Room access, and advanced PDF exports.",
-                "Enterprise Licensing: Dedicated validation dashboards for university hubs and accelerators.",
-                "API License: Licensing validation APIs to developer platforms and startup application portals."
-            ],
-            "note": "We monetize through a premium subscription for power creators, and enterprise packages for incubators."
-        },
-        {
-            "num": "12",
-            "title": "Go-To-Market",
-            "tagline": "Reaching builders at the source.",
-            "bullets": [
-                "Hackathon Partnerships: Standardize LaunchMind as the pre-submission check for hackathons.",
-                "GitHub Action: Trigger a validation audit on repository creation via GitHub marketplace.",
-                "Build In Public: Drive organic traffic via viral LinkedIn and Twitter posts showing VC roasts.",
-                "Startup Hub Onboarding: Partner with incubator networks to use LaunchMind for cohort screening."
-            ],
-            "note": "Our GTM puts LaunchMind right where developers start — hackathons, repository creation, and early application portals."
-        },
-        {
-            "num": "13",
-            "title": "The Team",
+            "num": "08",
+            "title": "Business Model & Team",
             "tagline": "Team Dynamic Duo — Curing the Builder's Blindspot.",
             "bullets": [
+                "Freemium Model: 3 free validations/month, Pro plan ($19/mo) for unlimited validations.",
                 "Swaraj Kumar Behera — Fullstack Developer & AI Integration Specialist.",
                 "Prajakta Kuila — Frontend Engineer & Lead UI/UX Designer.",
-                "Our Goal: Making startup validation accessible, fast, and objective.",
-                "GitHub Repo: https://github.com/swaraj3092/LaunchMind"
+                "GitHub Repository: https://github.com/swaraj3092/LaunchMind"
             ],
             "note": "We are Swaraj and Prajakta, team Dynamic Duo, committed to helping developers build products people actually want."
         }

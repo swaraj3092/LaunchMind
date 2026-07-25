@@ -68,109 +68,70 @@ To ensure scalability:
 *   **Title:** The Startup Graveyard
 *   **Headline:** Builders build first and ask questions later.
 *   **Content:** 
-    *   Founders operate in echo chambers.
-    *   Validating ideas is difficult, slow, and expensive.
-    *   Result: Months of coding wasted on flawed premises.
+    *   Echo Chambers: Founders validate ideas with supportive friends instead of market realities.
+    *   CB Insights: 'No Market Need' is the #1 cause of startup post-mortems (35%).
+    *   Premature Optimization: Wasting 6 months of code before spending 6 minutes validating.
 *   **Speaker Note:** "Founders are biased toward action. We'd rather write code than validate a market, which leads us to build elegant solutions for problems that don't exist."
 
-**Slide 3: The Builder's Blindspot**
-*   **Title:** The Cost of Premature Optimization
-*   **Headline:** 35% of startups fail because of "No Market Need."
-*   **Content:** 
-    *   Statistic: 90% startup failure rate.
-    *   Statistic: 35% fail due to lack of market need (CB Insights).
-    *   Massive waste of capital and human potential.
-*   **Speaker Note:** "The data is brutal. Over a third of failures happen simply because nobody wanted what was built. We call this the Builder's Blindspot."
-
-**Slide 4: The Solution**
+**Slide 3: The Solution**
 *   **Title:** Meet LaunchMind
 *   **Headline:** An AI-powered startup advisor that stress-tests your vision.
 *   **Content:** 
-    *   Instant, objective validation.
-    *   Powered by Gemini 2.5 Flash and Live Web Search.
-    *   From raw idea to executable roadmap in minutes.
-*   **Speaker Note:** "LaunchMind is your brutally honest AI co-founder. It rips you out of the blindspot and forces you to face market realities before you commit to building."
+    *   Instant, objective validation via Google Gemini 2.5 Flash.
+    *   Personalized 5-question PM validation engine (Roast Mode 🔥).
+    *   Live Competitor Search via DuckDuckGo scraper connection.
+    *   Phased 90-day roadmap + Day 1 action checklists.
+*   **Speaker Note:** "LaunchMind is your AI co-founder. It rips you out of the blindspot, interrogates your assumptions, and hands you an actionable roadmap in minutes."
 
-**Slide 5: How It Works**
+**Slide 4: How It Works**
 *   **Title:** The Validation Journey
 *   **Headline:** From raw idea to a 90-day execution plan.
 *   **Content:** 
-    *   Step 1: Idea Interrogation (Roast Mode 🔥).
-    *   Step 2: Assumption Kill-Check.
-    *   Step 3: Market Intelligence & Live Competitor Search.
-*   **Speaker Note:** "You give LaunchMind a raw concept, and it interrogates you. It identifies the top three assumptions that will kill your idea and pulls real-time competitors."
+    *   Step 1: Input your raw startup concept in one simple sentence.
+    *   Step 2: Answer 5 AI-generated clarifying questions (Normal or Roast Mode).
+    *   Step 3: AI scrapes the live web to find active competitors and calculate TAM.
+    *   Step 4: Enter the VC Room to pitch your idea live against 3 VCs.
+*   **Speaker Note:** "You give LaunchMind a raw concept, and it interrogates you. It identifies the top three assumptions that will kill your idea, pulls real-time competitors, and calculates market size."
 
-**Slide 6: The Key Differentiator**
+**Slide 5: Key Differentiator: VC Pitch Room**
 *   **Title:** Virtual VC Pitch Room
 *   **Headline:** Practice your pitch against relentless AI personas.
 *   **Content:** 
     *   Select from 3 VC personas (Skeptical, Growth, Deep Tech).
-    *   Live, 4-round conversational simulation.
-    *   Dynamic scoring based on your defense.
-*   **Speaker Note:** "Our standout feature is the Virtual VC Room. You literally pitch to an AI like Marcus Vance, who will grill you on your metrics. Your score updates in real-time."
+    *   Live, 4-round conversational simulation with real-time score tracking.
+    *   Dynamic response evaluation (+8 Strong, -4 Weak).
+    *   Blunt partner-level verdict (Invest/Pass) with full feedback logs.
+*   **Speaker Note:** "Our standout feature is the Virtual VC Room. You pitch to an AI like Marcus Vance, who will grill you on metrics, while your score updates live based on your defense."
 
-**Slide 7: Market Opportunity**
-*   **Title:** The Creator Economy & Entrepreneurship
-*   **Headline:** Democratizing elite startup advisory.
+**Slide 6: Market Opportunity & Competition**
+*   **Title:** Validating the Opportunity
+*   **Headline:** Benchmarking competitors and addressable market.
 *   **Content:** 
-    *   Target: Solo-founders, hackers, student entrepreneurs.
-    *   Alternative: Expensive consultants or wasted dev time.
-    *   LaunchMind: Accessible, scalable validation for millions.
-*   **Speaker Note:** "There are millions of developers and indie hackers globally. We are providing them the advisory services previously reserved for YC-backed founders."
+    *   TAM/SAM/SOM Sizing: Dollar Value market benchmarks.
+    *   Competitor Scraper: Real-time DuckDuckGo searches fetch competitor links & descriptions.
+    *   benchmarking: Benchmarks your idea scores against competitor metrics.
+    *   Differentiators pre-formatted against FreshBooks, Wave, and Contra.
+*   **Speaker Note:** "LaunchMind parses competitor differentiators on-the-fly and benchmarks your idea scores directly against competitor metrics."
 
-**Slide 8: Tech Architecture**
-*   **Title:** Built for Speed & Intelligence
+**Slide 7: Tech Architecture & Roadmap**
+*   **Title:** Built for Speed & Scale
 *   **Headline:** A robust, decoupled multi-agent architecture.
 *   **Content:** 
     *   Frontend: React + Vite + Framer Motion (SPA).
-    *   Backend: FastAPI (Python).
-    *   AI: Gemini 2.5 Flash (Structured Outputs) + DuckDuckGo live search.
-*   **Speaker Note:** "We built a multi-agent pipeline using Gemini Flash for rapid, structured reasoning, combined with live web scraping to prevent AI hallucinations about competitors."
+    *   Backend: FastAPI (Python) + Gemini 2.5 Flash (Structured Outputs) + DDG API.
+    *   Phase 1 (Completed): Core validation engine and VC Pitch Room MVP.
+    *   Phase 2 (Q3/Q4): User accounts, session persistence, and voice pitch integrations.
+*   **Speaker Note:** "We built a multi-agent pipeline using Gemini Flash for rapid, structured reasoning, combined with live web scraping, and we plan to add voice-to-voice pitching next."
 
-**Slide 9: Traction & Roadmap**
-*   **Title:** What's Next
-*   **Headline:** From hackathon MVP to a comprehensive founder OS.
-*   **Content:** 
-    *   Phase 1: Validation Engine (Completed).
-    *   Phase 2: User auth, saved projects, progress tracking.
-    *   Phase 3: Voice-integrated pitch simulations & RAG benchmarking.
-*   **Speaker Note:** "We've built the core validation engine this weekend. Next, we are adding persistence, and eventually, voice-to-voice pitch simulations."
-
-**Slide 10: The Ask**
-*   **Title:** Joining the Validation Revolution
-*   **Headline:** Helping 10,000 founders build what matters.
-*   **Content:** 
-    *   Stage: Pre-seed / Prototype validation.
-    *   Target: Network partnerships with accelerators, incubators, and university hackathons.
-    *   Focus: Onboarding early adopters and collecting UX feedback.
-*   **Speaker Note:** "We are currently looking for network partnerships with hackathons, venture studios, and incubators to run early pre-validation programs."
-
-**Slide 11: Business Model**
-*   **Title:** Monetization Strategy
-*   **Headline:** Scalable value creation for developers and accelerators.
-*   **Content:** 
-    *   Freemium: 3 free validations/month for builders.
-    *   Pro ($19/mo): Unlimited validations, PDF exports, and unlimited VC Pitch Room access.
-    *   Enterprise: Annual licensing for incubators, accelerators, and venture studios.
-*   **Speaker Note:** "Our business model is a simple freemium model for solo developers, scaling up to enterprise licenses for startup incubators and accelerators."
-
-**Slide 12: Go-To-Market**
-*   **Title:** Go-To-Market Strategy
-*   **Headline:** Reaching builders at the moment of ideation.
-*   **Content:** 
-    *   University Hackathons: LaunchMind as the official pre-validation tool.
-    *   GitHub Integration: A GitHub Action that runs checks on repository creation.
-    *   Build In Public: Social content featuring viral VC Pitch Room roasts.
-*   **Speaker Note:** "We will acquire users by integrating directly into where they start building — university hackathons, GitHub repositories, and local startup ecosystems."
-
-**Slide 13: The Team**
+**Slide 8: Business Model & Team**
 *   **Title:** Team Dynamic Duo
 *   **Headline:** Curing the Builder's Blindspot together.
 *   **Content:** 
-    *   Team Name: Dynamic Duo
+    *   Freemium: 3 free validations/month, Pro plan ($19/mo) for unlimited validations.
     *   Swaraj Kumar Behera (Fullstack Developer & AI Integration)
     *   Prajakta Kuila (Frontend Engineer & UI/UX Design)
-*   **Speaker Note:** "We are Swaraj Kumar Behera and Prajakta Kuila, team Dynamic Duo, and we are ready to help builders build what matters. Thank you, and we'd love to take your questions."
+    *   GitHub Repository: https://github.com/swaraj3092/LaunchMind
+*   **Speaker Note:** "We monetize through a simple freemium model. We are Swaraj and Prajakta, team Dynamic Duo, and we are ready to help builders build what matters. Thank you."
 
 ## Section 5: 5-MINUTE VIDEO DEMO SCRIPT
 

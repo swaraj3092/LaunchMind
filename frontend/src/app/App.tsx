@@ -1673,30 +1673,32 @@ function ResultsDashboard({ idea, analysis, plan, isPlanning, onAdjust, onRestar
                 transition={{ duration: 0.25 }}>
                 <div className="mb-6">
                   <h2 className="font-bold mb-1" style={{ fontSize: 20, color: TP }}>AI-Generated Pitch Deck</h2>
-                  <p className="text-sm" style={{ color: TS }}>10 investor-ready slides generated from your plan. Copy each slide into Google Slides or PowerPoint.</p>
+                  <p className="text-sm" style={{ color: TS }}>8 investor-ready slides generated from your plan. Copy each slide into Google Slides or PowerPoint.</p>
                 </div>
                 <div className="space-y-4">
                   {[
-                    { num: "01", title: "Cover Slide", icon: "🚀", color: V, content: [`Company: Your Startup Name`, `Tagline: ${analysis?.idea_summary?.split('.')[0] || idea || "A Startup Idea"}`, `Presenter: Swaraj Kumar Behera & Prajakta Kuila (Team: Dynamic Duo)`, `Date: ${new Date().toLocaleDateString('en-IN', { month: 'long', year: 'numeric' })}`] },
-                    { num: "02", title: "The Problem", icon: "😤", color: "#FF6B6B", content: [`Builders spend months on products nobody wants`, `Over 90% of startups fail due to poor market validation`, `The "Builder's Blindspot" — falling in love with the idea, not the market`, `Current tools offer no real-time, AI-driven validation support`] },
-                    { num: "03", title: "Market Opportunity", icon: "📊", color: A, content: [plan?.market_size?.tam_label ? `TAM: ${plan.market_size.tam_label}` : `Total Addressable Market: Multi-billion dollar segment`, plan?.market_size?.sam_label ? `SAM: ${plan.market_size.sam_label}` : `Serviceable Market: Growing rapidly`, plan?.market_size?.som_label ? `3-Year Target: ${plan.market_size.som_label}` : `Initial Target Market: Early adopters`, plan?.market_size?.market_narrative || `Massive, underserved market with strong growth trajectory`] },
-                    { num: "04", title: "Our Solution", icon: "💡", color: V2, content: [`AI-powered startup advisor that validates ideas before you build`, `5-question interrogation engine tailored to your role + timeline`, `Live web scraping for real competitor intelligence`, `Venture Readiness Score: AI scores your idea across 4 key dimensions`] },
-                    { num: "05", title: "How It Works", icon: "⚙️", color: T, content: [`Step 1: Submit your idea (one rough sentence is enough)`, `Step 2: Answer 5 AI-generated clarifying questions`, `Step 3: Receive 90-day roadmap + competitor analysis + market sizing`, `Step 4: Enter the VC Pitch Room — defend your idea live against 3 AI investors`] },
-                    { num: "06", title: "The VC Pitch Room", icon: "🦈", color: "#06B6D4", content: [`3 distinct AI VC personas: Skeptic, Growth Angel, Deep Tech`, `4-round interactive pitch simulation with real-time score tracking`, `Each answer scored: Strong / Decent / Weak / Red Flag`, `Final verdict + Venture Readiness Score update after pitch completes`] },
-                    { num: "07", title: "Competitive Advantage", icon: "🏆", color: M, content: [
+                    { num: "01", title: "Cover Slide", icon: "🚀", color: V, content: [`Company: LaunchMind`, `Tagline: ${analysis?.idea_summary?.split('.')[0] || idea || "A Startup Idea"}`, `Presenter: Swaraj Kumar Behera & Prajakta Kuila (Team: Dynamic Duo)`, `Track: Generative AI & Startup Innovation Track`] },
+                    { num: "02", title: "The Problem", icon: "😤", color: "#FF6B6B", content: [`The Builder's Blindspot: spending 6 months coding before 6 minutes validating`, `CB Insights: 'No Market Need' is the #1 cause of startup failure (35%)`, `Founders rely on supportive friends instead of objective market feedback`, `Expert VC advice and reality checks are expensive and inaccessible`] },
+                    { num: "03", title: "The Solution", icon: "💡", color: V2, content: [`LaunchMind: An always-on AI co-founder that stress-tests your startup idea`, `Idea Interrogation: A personalized 5-question PM validation engine`, `Assumption Kill-Check: Identifies and maps the top 3 unvalidated risks`, `Action-Oriented: Delivers a dynamic 90-day roadmap and Day 1 action checklist`] },
+                    { num: "04", title: "How It Works", icon: "⚙️", color: T, content: [`Step 1: Input your raw startup concept in one simple sentence`, `Step 2: Answer 5 AI-generated clarifying questions (Normal or Roast Mode)`, `Step 3: AI scrapes the live web to find active competitors and calculate TAM`, `Step 4: Enter the VC Room to pitch your idea live against 3 VCs`] },
+                    { num: "05", title: "Key Differentiator: VC Pitch Room", icon: "🦈", color: "#06B6D4", content: [`3 AI VCs: Marcus Vance (Skeptic), Elena Rostova (Growth), Dr. Aris Thorne (Deep Tech)`, `Real-Time Scoring: Score badges (+8 Strong, -4 Weak) animate live on user answers`, `Semantic Due Diligence: 4 rounds of partner-level follow-up questions`, `Partner Verdict: Full capital decision (Invest/Pass) with feedback logging`] },
+                    { num: "06", title: "Market Size & Competition", icon: "📊", color: A, content: [
+                      plan?.market_size?.tam_label ? `TAM: ${plan.market_size.tam_label}` : `TAM: Global freelancer and SMB segments`,
+                      plan?.market_size?.sam_label ? `SAM: ${plan.market_size.sam_label}` : `SAM: Early adopters and solo hackers`,
                       ...(plan?.competitors?.slice(0, 2).map((c: any) => `vs ${c.name || 'Competitor'}: ${c.differentiator?.slice(0, 60) || c.description?.slice(0, 60) || 'Our unique value'}...`) || []),
-                      `Real-time web search — not static databases`, `Live VC simulation — no other tool has this`
                     ] },
-                    { num: "08", title: "Tech Architecture", icon: "🔧", color: TS, content: [`Frontend: React + TypeScript + Vite + Framer Motion + Recharts`, `Backend: FastAPI (Python) + Gemini 2.5 Flash (structured JSON output)`, `Live web: DuckDuckGo real-time search for competitor discovery`, `AI Pipeline: 3 specialized agents — Interrogation, Planning, Pitch Room`] },
-                    { num: "09", title: "Traction & Roadmap", icon: "📈", color: V, content: [
-                      ...(plan?.roadmap?.day_30?.slice(0, 2).map((m: any) => `30 Days: ${typeof m === 'string' ? m.replace(/\[.*?\]\s*/, '') : (m?.text || 'Validate assumptions')}`) || []),
-                      ...(plan?.roadmap?.day_60?.slice(0, 1).map((m: any) => `60 Days: ${typeof m === 'string' ? m.replace(/\[.*?\]\s*/, '') : (m?.text || 'Build core features')}`) || []),
-                      `90 Days: Public launch + monetization`
+                    { num: "07", title: "Tech Stack & Roadmap", icon: "🔧", color: TS, content: [
+                      `Frontend: React SPA + Vite + TailwindCSS + Framer Motion`,
+                      `Backend: FastAPI (Python) + Gemini 2.5 Flash + DuckDuckGo live search api`,
+                      ...(plan?.roadmap?.day_30?.slice(0, 1).map((m: any) => `30 Days: ${typeof m === 'string' ? m.replace(/\[.*?\]\s*/, '') : 'Validate assumptions'}`) || []),
+                      ...(plan?.roadmap?.day_60?.slice(0, 1).map((m: any) => `60 Days: ${typeof m === 'string' ? m.replace(/\[.*?\]\s*/, '') : 'Build core MVP'}`) || []),
                     ] },
-                    { num: "10", title: "The Ask", icon: "🤝", color: V2, content: [`Stage: Pre-seed / Prototype validation`, `Target: Network partnerships with incubator networks and university hackathons`, `Focus: Connecting with mentors and early adopters`, `Goal: Helping 10,000 founders build what matters`] },
-                    { num: "11", title: "Business Model", icon: "💰", color: M, content: [`Freemium: 3 free validations per month for solo builders`, `Pro Tier ($19/mo): Unlimited validations, PDF exports, and unlimited VC Pitch Room access`, `Enterprise Tier: License for university incubators, startup accelerators, and venture studios`, `API Licensing: Let third-party developer platforms embed our validation API`] },
-                    { num: "12", title: "Go-To-Market", icon: "📣", color: A, content: [`University Hackathons: Embed LaunchMind as the official pre-validation tool for submissions`, `GitHub Marketplace: Release a GitHub Action that checks project ideas on repository creation`, `Build In Public: Leverage Twitter/X and LinkedIn content showing brutal VC Pitch Room roasts`, `Venture Partnerships: Partner with startup hubs to offer LaunchMind as part of onboarding`] },
-                    { num: "13", title: "The Team", icon: "👥", color: V, content: [`Team Name: Dynamic Duo`, `Swaraj Kumar Behera (Fullstack Developer & AI Integration)`, `Prajakta Kuila (Frontend Engineer & UI/UX Design)`, `Vision: The Grammarly of startup validation — validate before you build`] },
+                    { num: "08", title: "Business Model & Team", icon: "💰", color: M, content: [
+                      `Freemium: 3 free validations per month for solo builders`,
+                      `Pro ($19/mo): Unlimited validations and VC Pitch Room access`,
+                      `Team: Dynamic Duo — Swaraj Kumar Behera (Fullstack & AI) & Prajakta Kuila (UX & UI)`,
+                      `GitHub: https://github.com/swaraj3092/LaunchMind`
+                    ] },
                   ].map(({ num, title, icon, color, content }) => (
                     <GlassCard key={num} hoverable className="p-5">
                       <div className="flex items-start gap-4">
