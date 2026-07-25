@@ -136,14 +136,41 @@ To ensure scalability:
     *   Phase 3: Voice-integrated pitch simulations & RAG benchmarking.
 *   **Speaker Note:** "We've built the core validation engine this weekend. Next, we are adding persistence, and eventually, voice-to-voice pitch simulations."
 
-**Slide 10: Team & Ask**
-*   **Title:** Ready for Launch
-*   **Headline:** We are the cure for the Builder's Blindspot.
+**Slide 10: The Ask**
+*   **Title:** Joining the Validation Revolution
+*   **Headline:** Helping 10,000 founders build what matters.
 *   **Content:** 
-    *   Team: Dynamic Duo (Swaraj Kumar Behera & Prajakta Kuila)
-    *   Call to action: Try LaunchMind today.
-    *   Q&A.
-*   **Speaker Note:** "We are Swaraj Kumar Behera and Prajakta Kuila from team Dynamic Duo, and we're ready to help builders build what matters. Thank you, and we'd love to take your questions."
+    *   Stage: Pre-seed / Prototype validation.
+    *   Target: Network partnerships with accelerators, incubators, and university hackathons.
+    *   Focus: Onboarding early adopters and collecting UX feedback.
+*   **Speaker Note:** "We are currently looking for network partnerships with hackathons, venture studios, and incubators to run early pre-validation programs."
+
+**Slide 11: Business Model**
+*   **Title:** Monetization Strategy
+*   **Headline:** Scalable value creation for developers and accelerators.
+*   **Content:** 
+    *   Freemium: 3 free validations/month for builders.
+    *   Pro ($19/mo): Unlimited validations, PDF exports, and unlimited VC Pitch Room access.
+    *   Enterprise: Annual licensing for incubators, accelerators, and venture studios.
+*   **Speaker Note:** "Our business model is a simple freemium model for solo developers, scaling up to enterprise licenses for startup incubators and accelerators."
+
+**Slide 12: Go-To-Market**
+*   **Title:** Go-To-Market Strategy
+*   **Headline:** Reaching builders at the moment of ideation.
+*   **Content:** 
+    *   University Hackathons: LaunchMind as the official pre-validation tool.
+    *   GitHub Integration: A GitHub Action that runs checks on repository creation.
+    *   Build In Public: Social content featuring viral VC Pitch Room roasts.
+*   **Speaker Note:** "We will acquire users by integrating directly into where they start building — university hackathons, GitHub repositories, and local startup ecosystems."
+
+**Slide 13: The Team**
+*   **Title:** Team Dynamic Duo
+*   **Headline:** Curing the Builder's Blindspot together.
+*   **Content:** 
+    *   Team Name: Dynamic Duo
+    *   Swaraj Kumar Behera (Fullstack Developer & AI Integration)
+    *   Prajakta Kuila (Frontend Engineer & UI/UX Design)
+*   **Speaker Note:** "We are Swaraj Kumar Behera and Prajakta Kuila, team Dynamic Duo, and we are ready to help builders build what matters. Thank you, and we'd love to take your questions."
 
 ## Section 5: 5-MINUTE VIDEO DEMO SCRIPT
 
