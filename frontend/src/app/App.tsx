@@ -1677,7 +1677,7 @@ function ResultsDashboard({ idea, analysis, plan, isPlanning, onAdjust, onRestar
                 </div>
                 <div className="space-y-4">
                   {[
-                    { num: "01", title: "Cover Slide", icon: "🚀", color: V, content: [`Company: Your Startup Name`, `Tagline: ${analysis?.idea_summary?.split('.')[0] || idea || "A Startup Idea"}`, `Presenter: Your Name | ${role || "Founder"}`, `Date: ${new Date().toLocaleDateString('en-IN', { month: 'long', year: 'numeric' })}`] },
+                    { num: "01", title: "Cover Slide", icon: "🚀", color: V, content: [`Company: Your Startup Name`, `Tagline: ${analysis?.idea_summary?.split('.')[0] || idea || "A Startup Idea"}`, `Presenter: Swaraj Kumar Behera & Prajakta Kuila (Team: Dynamic Duo)`, `Date: ${new Date().toLocaleDateString('en-IN', { month: 'long', year: 'numeric' })}`] },
                     { num: "02", title: "The Problem", icon: "😤", color: "#FF6B6B", content: [`Builders spend months on products nobody wants`, `Over 90% of startups fail due to poor market validation`, `The "Builder's Blindspot" — falling in love with the idea, not the market`, `Current tools offer no real-time, AI-driven validation support`] },
                     { num: "03", title: "Market Opportunity", icon: "📊", color: A, content: [plan?.market_size?.tam_label ? `TAM: ${plan.market_size.tam_label}` : `Total Addressable Market: Multi-billion dollar segment`, plan?.market_size?.sam_label ? `SAM: ${plan.market_size.sam_label}` : `Serviceable Market: Growing rapidly`, plan?.market_size?.som_label ? `3-Year Target: ${plan.market_size.som_label}` : `Initial Target Market: Early adopters`, plan?.market_size?.market_narrative || `Massive, underserved market with strong growth trajectory`] },
                     { num: "04", title: "Our Solution", icon: "💡", color: V2, content: [`AI-powered startup advisor that validates ideas before you build`, `5-question interrogation engine tailored to your role + timeline`, `Live web scraping for real competitor intelligence`, `Venture Readiness Score: AI scores your idea across 4 key dimensions`] },
@@ -1693,7 +1693,7 @@ function ResultsDashboard({ idea, analysis, plan, isPlanning, onAdjust, onRestar
                       ...(plan?.roadmap?.day_60?.slice(0, 1).map((m: any) => `60 Days: ${typeof m === 'string' ? m.replace(/\[.*?\]\s*/, '') : (m?.text || 'Build core features')}`) || []),
                       `90 Days: Public launch + monetization`
                     ] },
-                    { num: "10", title: "The Ask", icon: "🤝", color: V2, content: [`Looking for: Mentorship + Network access`, `Stage: Idea validation → MVP development`, `Goal: 1,000 validated ideas in 90 days`, `Vision: The Grammarly of startup validation — validate before you build`] },
+                    { num: "10", title: "The Team & Ask", icon: "🤝", color: V2, content: [`Team: Dynamic Duo (Swaraj Kumar Behera & Prajakta Kuila)`, `Looking for: Mentorship + Network access`, `Stage: Idea validation → MVP development`, `Vision: The Grammarly of startup validation — validate before you build`] },
                   ].map(({ num, title, icon, color, content }) => (
                     <GlassCard key={num} hoverable className="p-5">
                       <div className="flex items-start gap-4">
