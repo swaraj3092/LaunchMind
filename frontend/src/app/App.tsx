@@ -1344,7 +1344,7 @@ function ResultsDashboard({ idea, analysis, plan, isPlanning, onAdjust, onRestar
         <aside className="hidden md:flex flex-col shrink-0 border-r sticky top-0 h-screen overflow-y-auto"
           style={{ width: 280, background: SURF, borderColor: "rgba(255,45,120,0.1)" }}>
           <div className="p-5 flex-1 flex flex-col gap-4">
-            <div className="flex items-center gap-2 pb-4 border-b" style={{ borderColor: BD }}>
+            <div onClick={onRestart} className="flex items-center gap-2 pb-4 border-b cursor-pointer hover:opacity-80 transition-all" style={{ borderColor: BD }}>
               <img src="/favicon.png" alt="LaunchMind Logo" className="w-7 h-7 rounded-lg object-cover" />
               <span className="font-bold text-sm" style={{ color: TP, letterSpacing: "-0.02em" }}>LaunchMind</span>
             </div>
@@ -1409,10 +1409,13 @@ function ResultsDashboard({ idea, analysis, plan, isPlanning, onAdjust, onRestar
             </div>
           </div>
 
-          <div className="p-5 border-t" style={{ borderColor: BD }}>
+          <div className="p-5 border-t flex flex-col gap-2" style={{ borderColor: BD }}>
             <BtnGhost onClick={() => setShowExport(true)} fullWidth>
               <Download size={14} /> Export Plan
             </BtnGhost>
+            <button onClick={onRestart} className="w-full text-center text-xs py-2 hover:underline transition-all" style={{ color: TS }}>
+              ← Start New Idea (Clear Cache)
+            </button>
           </div>
         </aside>
 
